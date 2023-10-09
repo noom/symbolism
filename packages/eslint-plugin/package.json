@@ -1,6 +1,6 @@
 {
   "name": "@noom/symbolism-eslint-plugin",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Symbol aware typescript linting rules",
   "keywords": [
     "eslint",
@@ -8,13 +8,13 @@
     "eslint-plugin"
   ],
   "author": "@noom/symbolism-eslint-plugin",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
-    "@noom/symbolism-definitions": "^0.3.0",
-    "@noom/symbolism-paths": "^0.3.0",
+    "@noom/symbolism-definitions": "^0.3.2",
+    "@noom/symbolism-paths": "^0.3.2",
     "@typescript-eslint/utils": "^5.38.0",
     "tiny-invariant": "^1.2.0"
   },

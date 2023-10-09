@@ -6,6 +6,7 @@ import {
   dumpType,
 } from "@noom/symbolism-ts-debug";
 import {
+  getDocumentationComment,
   getResolvedTypeArguments,
   getSymbolDeclaration,
   getTypeId,
@@ -162,7 +163,11 @@ Existing: ${dumpSchema(
   // Caching the results of primitives, etc can result in incorrect
   // mappings due to contextNode varying for the intrinsic singletons.
   if (!isIntrinsicType(type)) {
-    context.typeCache.set(type, ret);
+    const documentationComment = getDocumentationComment(ret.node);
+    if (!documentationComment?.length) {
+      // Cache only we documentation comment does not exists
+      context.typeCache.set(type, ret);
+    }
   }
 
   return ret;
@@ -198,7 +203,10 @@ function getTypeSchemaWorker(
           decrementDepth: true,
         })
       );
-      return createUnionKind(items);
+      return {
+        ...createUnionKind(items),
+        node: context.contextNode,
+      };
     } else if (type.isIntersection()) {
       let allObjects = true;
       const items = type.types.map((t) => {
@@ -592,7 +600,7 @@ export function createReferenceFromType(
   if (!typeName) {
     return undefined;
   }
-  return createReferenceSchema(typeName, parameters, typeId, friendlyTypeId);
+  return createReferenceSchema(typeName, parameters, typeId, friendlyTypeId, context);
 }
 
 function findContextNode(type: ts.Type, contextNode: ts.Node): ts.Node {

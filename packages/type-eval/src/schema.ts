@@ -367,7 +367,8 @@ export function createReferenceSchema(
   name: string,
   parameters: ReferenceSchema["parameters"],
   typeId: TypeId,
-  friendlyTypeId: TypeId
+  friendlyTypeId: TypeId,
+  context: SchemaContext,
 ): AnySchemaNode {
   return {
     kind: "reference",
@@ -375,5 +376,6 @@ export function createReferenceSchema(
     parameters,
     typeId,
     friendlyTypeId,
+    node: context.contextNode,
   };
 }

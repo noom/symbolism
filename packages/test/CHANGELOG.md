@@ -1,5 +1,18 @@
 # @symbolism/test
 
+## 0.3.2
+
+### Patch Changes
+
+- 71cbb41: Publish packages
+
+## 0.3.1
+
+### Patch Changes
+
+- 9c948b8: Update packages
+- f1283bb: Publish packages
+
 ## 0.3.0
 
 ### Minor Changes

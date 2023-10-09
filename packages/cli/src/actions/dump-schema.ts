@@ -51,7 +51,6 @@ function dumpSchema(symbolPath: string, options: OptionValues) {
   logVerbose(`Scanning node`, () => dumpNode(node, checker));
 
   const schema = evaluateSchema(node, checker);
-
   console.log(
     options.json
       ? JSON.stringify(

@@ -68,6 +68,7 @@ export function convertObjectType(
     kind: "object",
     properties,
     abstractIndexKeys,
+    node: contextNode,
   };
 }
 

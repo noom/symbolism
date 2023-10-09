@@ -1,6 +1,6 @@
 {
   "name": "@noom/symbolism-type-eval",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Symbolism utilities",
   "main": "dist/index.js",
   "author": "Kevin Decker <kpdecker@gmail.com>",
@@ -10,10 +10,10 @@
     "url": "git+https://github.com/noom/symbolism.git"
   },
   "dependencies": {
-    "@noom/symbolism-definitions": "0.3.0",
-    "@noom/symbolism-ts-debug": "0.3.0",
-    "@noom/symbolism-ts-utils": "0.3.0",
-    "@noom/symbolism-utils": "0.3.0",
+    "@noom/symbolism-definitions": "0.3.2",
+    "@noom/symbolism-ts-debug": "0.3.2",
+    "@noom/symbolism-ts-utils": "0.3.2",
+    "@noom/symbolism-utils": "0.3.2",
     "prettier": "^2.7.1",
     "tiny-invariant": "^1.2.0"
   },

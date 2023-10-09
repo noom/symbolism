@@ -1,6 +1,6 @@
 {
   "name": "@noom/symbolism-test",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Symbolism utilities",
   "main": "dist/index.js",
   "author": "Kevin Decker <kpdecker@gmail.com>",

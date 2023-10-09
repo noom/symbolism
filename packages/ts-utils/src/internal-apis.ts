@@ -68,3 +68,10 @@ interface InternalSignature extends ts.Signature {
 export function getSignatureMapper(signature: ts.Signature | undefined) {
   return (signature as InternalSignature)?.mapper;
 }
+
+export function getDocumentationComment(
+  node?: ts.Node & { symbol?: ts.Symbol },
+  checker?: ts.TypeChecker,
+) {
+  return node?.symbol?.getDocumentationComment(checker) ?? [];
+}

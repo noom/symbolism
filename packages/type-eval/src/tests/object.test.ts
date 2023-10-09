@@ -40,6 +40,10 @@ describe("type schema converter", () => {
         const zeeRealString = 'real!';
 
         declare const zeeObject: Record<string, number> & {
+          /**
+           * this is a comment
+           * and a second line
+           */
           extra: string;
           [key: \`foo\${string}\`]: string;
         };
@@ -138,6 +142,10 @@ describe("type schema converter", () => {
               "type": "string",
             },
             "extra": Object {
+              "documentationComment": Array [
+                "this is a comment",
+                "and a second line",
+              ],
               "type": "string",
             },
             "gettor": Object {
