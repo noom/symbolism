@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/noom/symbolism.git"
   },
-  "main": "dist/index.js",
+  "main": "dist/noom-symbolism-ts-utils.cjs.js",
   "dependencies": {
     "@noom/symbolism-utils": "^0.3.0",
     "tiny-invariant": "^1.2.0"

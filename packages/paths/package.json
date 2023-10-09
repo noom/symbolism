@@ -2,7 +2,7 @@
   "name": "@noom/symbolism-paths",
   "version": "0.3.0",
   "description": "Symbolism utilities",
-  "main": "dist/index.js",
+  "main": "dist/noom-symbolism-paths.cjs.js",
   "author": "Kevin Decker <kpdecker@gmail.com>",
   "license": "MIT",
   "repository": {

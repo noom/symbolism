@@ -2,7 +2,7 @@
   "name": "@noom/symbolism-cli",
   "version": "0.3.0",
   "description": "Coverage assertions for specific code tokens.",
-  "main": "dist/index.js",
+  "main": "dist/noom-symbolism-cli.cjs.js",
   "bin": {
     "symbolism": "bin/symbolism.js"
   },

@@ -2,7 +2,7 @@
   "name": "@noom/symbolism-coverage",
   "version": "0.3.0",
   "description": "Coverage assertions for specific code tokens.",
-  "main": "dist/index.js",
+  "main": "dist/noom-symbolism-coverage.cjs.js",
   "author": "Kevin Decker <kpdecker@gmail.com>",
   "license": "MIT",
   "repository": {

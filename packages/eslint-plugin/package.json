@@ -8,7 +8,7 @@
     "eslint-plugin"
   ],
   "author": "@noom/symbolism-eslint-plugin",
-  "main": "./dist/index.js",
+  "main": "dist/noom-symbolism-eslint-plugin.cjs.js",
   "scripts": {
     "lint": "eslint ."
   },
