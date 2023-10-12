@@ -1,5 +1,11 @@
 # @symbolism/test
 
+## 0.3.3
+
+### Patch Changes
+
+- e5168a5: Release packages with documentation comments
+
 ## 0.3.2
 
 ### Patch Changes

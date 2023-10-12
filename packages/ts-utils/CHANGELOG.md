@@ -1,5 +1,13 @@
 # @symbolism/ts-utils
 
+## 0.3.3
+
+### Patch Changes
+
+- e5168a5: Release packages with documentation comments
+- Updated dependencies [e5168a5]
+  - @noom/symbolism-utils@0.3.3
+
 ## 0.3.2
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @symbolism/eslint-plugin
 
+## 0.1.3
+
+### Patch Changes
+
+- e5168a5: Release packages with documentation comments
+- Updated dependencies [e5168a5]
+  - @noom/symbolism-definitions@0.3.3
+  - @noom/symbolism-paths@0.3.3
+
 ## 0.1.2
 
 ### Patch Changes
