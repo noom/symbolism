@@ -8,7 +8,7 @@ Releases are managed using [changeset](https://github.com/changesets/changesets)
 
 `yarn changeset` : Run what changes that warrant notes in the changelog are made.
 
-`yarn version` : Run prior to publish
+`yarn version-packages` : Run prior to publish
 
 `yarn release` : Run to publish
 
