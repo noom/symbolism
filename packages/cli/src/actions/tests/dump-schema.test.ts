@@ -56,12 +56,18 @@ describe("dumpSchema", () => {
             \\"enum\\": [
               \\"bar\\",
               \\"bat\\"
-            ]
+            ],
+            \\"documentationComment\\": [],
+            \\"jsDocTags\\": []
           },
           \\"merged\\": {
-            \\"type\\": \\"number\\"
+            \\"type\\": \\"number\\",
+            \\"documentationComment\\": [],
+            \\"jsDocTags\\": []
           }
-        }
+        },
+        \\"documentationComment\\": [],
+        \\"jsDocTags\\": []
       }"
     `);
   });
@@ -99,12 +105,14 @@ describe("dumpSchema", () => {
                 \\"type\\": \\"string\\",
                 \\"documentationComment\\": [
                   \\"This is prop7, cache test\\"
-                ]
+                ],
+                \\"jsDocTags\\": []
               }
             },
             \\"documentationComment\\": [
               \\"This is prop7, cache test\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           }
         },
         \\"type\\": \\"object\\",
@@ -117,80 +125,103 @@ describe("dumpSchema", () => {
             ],
             \\"documentationComment\\": [
               \\"This is index prop \\\\\\"bar\\\\\\"\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop1\\": {
             \\"type\\": \\"string\\",
             \\"documentationComment\\": [
               \\"This is prop1\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop2\\": {
             \\"anyOf\\": [
               {
-                \\"const\\": null
+                \\"const\\": null,
+                \\"documentationComment\\": [],
+                \\"jsDocTags\\": []
               },
               {
                 \\"type\\": \\"string\\",
                 \\"documentationComment\\": [
                   \\"This is prop2\\"
-                ]
+                ],
+                \\"jsDocTags\\": []
               }
             ],
             \\"documentationComment\\": [
               \\"This is prop2\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop3\\": {
             \\"type\\": \\"number\\",
             \\"documentationComment\\": [
               \\"This is prop3\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop4\\": {
             \\"anyOf\\": [
               {
-                \\"const\\": null
+                \\"const\\": null,
+                \\"documentationComment\\": [],
+                \\"jsDocTags\\": []
               },
               {
                 \\"type\\": \\"number\\",
                 \\"documentationComment\\": [
                   \\"This is prop4\\"
-                ]
+                ],
+                \\"jsDocTags\\": []
               }
             ],
             \\"documentationComment\\": [
               \\"This is prop4\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop5\\": {
             \\"$ref\\": \\"#/$defs/Array\\",
             \\"documentationComment\\": [
               \\"This is prop5\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop7\\": {
             \\"$ref\\": \\"#/$defs/Record\\",
             \\"documentationComment\\": [
               \\"This is prop7, cache test\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop8\\": {
             \\"$ref\\": \\"#/$defs/Record\\",
             \\"documentationComment\\": [
               \\"This is prop8, cache test\\"
-            ]
+            ],
+            \\"jsDocTags\\": []
           },
           \\"prop9\\": {
             \\"$ref\\": \\"#/$defs/Record\\",
             \\"documentationComment\\": [
               \\"This is prop9, cache test\\"
+            ],
+            \\"jsDocTags\\": [
+              {
+                \\"name\\": \\"deprecated\\",
+                \\"text\\": [
+                  \\"This is jsDoc tag test\\"
+                ]
+              }
             ]
           }
         },
         \\"documentationComment\\": [
           \\"This is SchemaWithComments\\"
-        ]
+        ],
+        \\"jsDocTags\\": []
       }"
     `);
   });

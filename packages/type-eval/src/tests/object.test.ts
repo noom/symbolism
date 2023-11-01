@@ -102,14 +102,18 @@ describe("type schema converter", () => {
           "$comment": undefined,
           "$defs": Object {
             "Source": Object {
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
               "patternProperties": undefined,
               "properties": Object {
                 "directUnion": Object {
+                  "documentationComment": Array [],
                   "enum": Array [
                     1,
                     2,
                     3,
                   ],
+                  "jsDocTags": Array [],
                   "type": "string",
                 },
               },
@@ -118,27 +122,39 @@ describe("type schema converter", () => {
           },
           "$id": "test.ts",
           "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "documentationComment": Array [],
+          "jsDocTags": Array [],
           "patternProperties": Object {
             "/^.*$/": Object {
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
               "type": "number",
             },
             "/^.*fooreal!$/": Object {
               "const": "literal!",
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
             },
             "/^foo.*$/": Object {
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
               "type": "string",
             },
           },
           "properties": Object {
             "bothor": Object {
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
               "type": "string",
             },
             "directUnion": Object {
+              "documentationComment": Array [],
               "enum": Array [
                 1,
                 2,
                 3,
               ],
+              "jsDocTags": Array [],
               "type": "string",
             },
             "extra": Object {
@@ -146,35 +162,54 @@ describe("type schema converter", () => {
                 "this is a comment",
                 "and a second line",
               ],
+              "jsDocTags": Array [],
               "type": "string",
             },
             "gettor": Object {
               "$ref": "#/$defs/Source",
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
             },
             "methodor": Object {
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
               "message": "((a: number) => string) is not supported in JSON schema",
               "type": "error",
             },
             "real!bar": Object {
               "const": 42,
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
             },
             "settor": Object {
               "anyOf": Array [
                 Object {
                   "const": true,
+                  "documentationComment": Array [],
+                  "jsDocTags": Array [],
                 },
                 Object {
                   "const": false,
+                  "documentationComment": Array [],
+                  "jsDocTags": Array [],
                 },
               ],
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
             },
             "source": Object {
               "$ref": "#/$defs/Source",
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
             },
             "source!": Object {
               "$ref": "#/$defs/Source",
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
             },
             "string": Object {
+              "documentationComment": Array [],
+              "jsDocTags": Array [],
               "type": "string",
             },
           },

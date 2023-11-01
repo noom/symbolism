@@ -24,7 +24,10 @@ export interface SchemaWithComments {
   prop7: Record<string, string>;
   /** This is prop8, cache test */
   prop8: Record<string, string>;
-  /** This is prop9, cache test */
+  /**
+   * This is prop9, cache test 
+   * @deprecated This is jsDoc tag test
+  */
   prop9: Record<string, string>;
 }
 

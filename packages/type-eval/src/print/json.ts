@@ -5,7 +5,7 @@ import type { AnySchemaNode, Schema } from "../schema";
 import { schemaToRegEx } from "../string";
 import { printSchemaNode } from "./typescript";
 import { SymbolDisplayPart } from "typescript";
-import { getDocumentationComment } from "@noom/symbolism-ts-utils";
+import { getDocumentationComment, getJsDocTags } from "@noom/symbolism-ts-utils";
 
 export function createJsonSchema(params: {
   schema: Schema;
@@ -31,16 +31,11 @@ export function createJsonSchema(params: {
 }
 
 const getDocumentation = (schema: AnySchemaNode | undefined) => {
-  const documentationComment = getDocumentationComment(schema?.node)
-    // Split on line break
-    .map((c: SymbolDisplayPart) => c?.text.split(/\r?\n/))
-    .flat(Infinity);
+  const documentationComment = getDocumentationComment(schema?.node);
+  const jsDocTags = getJsDocTags(schema?.node);
 
-  if (documentationComment.length > 0) {
-    return { documentationComment };
-  }
+  return { documentationComment, jsDocTags };
 
-  return {};
 };
 
 export function schemaToJson(

@@ -1,4 +1,4 @@
-import ts from "typescript";
+import ts, { SymbolDisplayPart } from "typescript";
 
 interface InternalTypeChecker extends ts.TypeChecker {
   isArrayType(type: ts.Type): boolean;
@@ -69,9 +69,30 @@ export function getSignatureMapper(signature: ts.Signature | undefined) {
   return (signature as InternalSignature)?.mapper;
 }
 
+const extractSymbolDisplayParts = (symbol: SymbolDisplayPart[]) => {
+  // Split on line break
+  return symbol
+    .map((c: SymbolDisplayPart) => c?.text.split(/\r?\n/))
+    .flat(Infinity) as string[];
+}
+
 export function getDocumentationComment(
   node?: ts.Node & { symbol?: ts.Symbol },
   checker?: ts.TypeChecker,
 ) {
-  return node?.symbol?.getDocumentationComment(checker) ?? [];
+  const documentationComment = node?.symbol?.getDocumentationComment(checker) ?? [];
+  return extractSymbolDisplayParts(documentationComment);
+}
+
+export function getJsDocTags(
+  node?: ts.Node & { symbol?: ts.Symbol },
+  checker?: ts.TypeChecker,
+) {
+  const jsDocTags = node?.symbol?.getJsDocTags(checker) ?? [];
+  return jsDocTags.map(t => {
+    return {
+      name: t.name,
+      text: extractSymbolDisplayParts(t.text || [])
+    }
+  })
 }
