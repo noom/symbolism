@@ -1,5 +1,11 @@
 # @symbolism/test
 
+## 0.3.4
+
+### Patch Changes
+
+- 85c0b44: Publish packages
+
 ## 0.3.3
 
 ### Patch Changes

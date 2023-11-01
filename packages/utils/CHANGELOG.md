@@ -1,5 +1,13 @@
 # @symbolism/utils
 
+## 0.3.4
+
+### Patch Changes
+
+- 85c0b44: Publish packages
+- Updated dependencies [85c0b44]
+  - @noom/symbolism-ts-debug@0.3.4
+
 ## 0.3.3
 
 ### Patch Changes

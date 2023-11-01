@@ -1,5 +1,14 @@
 # @symbolism/eslint-plugin
 
+## 0.1.4
+
+### Patch Changes
+
+- 85c0b44: Publish packages
+- Updated dependencies [85c0b44]
+  - @noom/symbolism-definitions@0.3.4
+  - @noom/symbolism-paths@0.3.4
+
 ## 0.1.3
 
 ### Patch Changes

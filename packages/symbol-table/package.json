@@ -1,6 +1,6 @@
 {
   "name": "@noom/symbolism-symbol-table",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Symbolism project symbol table",
   "author": "Kevin Decker <kpdecker@gmail.com>",
   "license": "MIT",
@@ -10,11 +10,11 @@
   },
   "main": "dist/index.js",
   "dependencies": {
-    "@noom/symbolism-definitions": "^0.3.3",
-    "@noom/symbolism-paths": "^0.3.3",
-    "@noom/symbolism-ts-debug": "^0.3.3",
-    "@noom/symbolism-ts-utils": "^0.3.3",
-    "@noom/symbolism-utils": "^0.3.3",
+    "@noom/symbolism-definitions": "^0.3.4",
+    "@noom/symbolism-paths": "^0.3.4",
+    "@noom/symbolism-ts-debug": "^0.3.4",
+    "@noom/symbolism-ts-utils": "^0.3.4",
+    "@noom/symbolism-utils": "^0.3.4",
     "tiny-invariant": "^1.2.0"
   },
   "peerDependencies": {
