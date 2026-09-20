@@ -15,7 +15,7 @@
   "dependencies": {
     "@noom/symbolism-definitions": "^0.3.4",
     "@noom/symbolism-paths": "^0.3.4",
-    "@typescript-eslint/utils": "^5.38.0",
+    "@typescript-eslint/utils": "^8.3.0",
     "tiny-invariant": "^1.2.0"
   },
   "devDependencies": {
